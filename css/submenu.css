@@ -1,0 +1,71 @@
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"]{
+	display:none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label{
+	display:block;
+	width:55px;
+	height: 45px;
+	position:fixed;
+  top: 25px;
+  right: 2.5%;
+	z-index:11;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span{
+	background:#92a8d1;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span{
+	display:block;
+	position:absolute;
+	width:100%;
+	height:5px;
+	border-radius:30px;
+	background:#fffefe;
+	transition:all 0.5s;
+}
+input[id="menuicon"]+label span:nth-child(1){
+	top:0;
+}
+input[id="menuicon"]+label span:nth-child(2){
+	top:50%;
+	transform:translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+	bottom:0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked+label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked+label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+
+
+/*메뉴 창*/
+.sidebar{
+	width:100%;
+	height:100%;
+	background:#262c36 url(../images/subbg_1.png) no-repeat 84% 100px;
+	position:fixed;
+	top:0;
+	right:-100%;
+	z-index:10;
+	transition:all 0.5s;
+}
+input[id="menuicon"]:checked+label+div{
+	right:0;
+}
+/* 서브창 꾸미기 */
+.logo2{width: 95%; padding: 15px 0; margin: auto;}
+.subcenter{width: 55%; margin: auto;}
+.subcenter li{text-align: center;}
+.subcenter a{font-family: 'Hind', sans-serif; font-size: 100px; font-weight: 900; color: #fffefe; padding: 0 3.6%;}
+.subcenter a:hover{background: url(../images/substar.png) no-repeat 0 5px; color: #92a8d1;}
