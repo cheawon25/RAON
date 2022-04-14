@@ -30,7 +30,7 @@
 }
 /* 버튼 가운데바 */
 .slider .slick-prev::before {
-    content: "｜";
+    content: " ";
 		position: absolute;
 		background: url(../images/centerbar.png) no-repeat;
 		color: #92a8d1;
