@@ -27,10 +27,10 @@
 }
 /* 버튼 가운데바 */
 .slider1 .slick-prev::before {
-	content: " ";
+	content: "｜";
 	position: absolute;
 	background: url(../images/centerbar.png) no-repeat 1px;
-	color: #92a8d1;
+	color: rgba(146,168,209,0.1);
 	font-weight: 100;
 	font-size: 20px;
 	top: 0;
@@ -121,10 +121,10 @@ width: 100%;
 }
 /* 버튼 가운데바 
 .slider2 .slick-prev::before {
-	content: " ";
+	content: "｜";
 	position: absolute;
 	background: url(../images/centerbar.png) no-repeat 1px;
-	color: #92a8d1;
+	color: rgba(146,168,209,0.1);
 	font-weight: 100;
 	font-size: 20px;
 	top: 0;
