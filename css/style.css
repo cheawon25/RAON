@@ -218,9 +218,9 @@ h5{padding-top: 20px;}
   input[id="menuicon"]+label span{background-color: #f7cac9;}
   input[id="menuicon"]+label{z-index: 15;}
   .sidebar{background: #262c36 url(../images/subbg_1.png) no-repeat right 100px;}
-  .subcenter{width: 70%; margin-top: 150px;}
+  .subcenter{width: 70%; margin-top: 0px;}
   .subcenter a{font-size: 70px; padding: 0 6%;}
-  .subcenter a:hover{background: url(../images/mobileSub_starbg.png) no-repeat 2% 9px;}
+  .subcenter a:hover{background: url(../images/mobileSub_starbg.png) no-repeat 2% 12px;}
   
   /* 스크롤 고정바*/
   .main2_nav{display: none;}
@@ -253,6 +253,7 @@ h5{padding-top: 20px;}
 }
 @media(max-width:650px){
   .subcenter{width: 90%;}
+  .subcenter a{font-size: 70px;}
 }
 @media(max-width:506px){
   h3{font-size: 18px; line-height: 30px; padding-top: 10px;}
@@ -262,7 +263,7 @@ h5{padding-top: 20px;}
   input[id="menuicon"]+label{width: 40px; height: 30px;}
   .logo1, .mainlogo2 img, .logo2 img{transform: scale(0.7);}
   #main1, .main2_inner, .logo2{padding: 10px 0;}
-  .subcenter{width: 100%; margin-top:70px;}
+  .subcenter{width: 100%; margin-top:60px;}
   .subcenter a{font-size: 60px;}
   .regular p{font-size: 20px; line-height: 30px;}
   .korfont{font-size: 19px;}
