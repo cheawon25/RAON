@@ -245,6 +245,9 @@ h5{padding-top: 20px;}
   .artist_intro li:nth-child(5){margin: 0;}
   .artist_intro li:nth-child(2n){margin-left: 2%;}
 }
+@media(max-width:1600px){
+  .subcenter a{font-size: 80px;}
+}
 @media(max-width:1024px){
   .subcenter{width: 90%;}
 }
@@ -259,7 +262,7 @@ h5{padding-top: 20px;}
   input[id="menuicon"]+label{width: 40px; height: 30px;}
   .logo1, .mainlogo2 img, .logo2 img{transform: scale(0.7);}
   #main1, .main2_inner, .logo2{padding: 10px 0;}
-  .subcenter{width: 100%;}
+  .subcenter{width: 100%; margin-top:70px;}
   .subcenter a{font-size: 60px;}
   .regular p{font-size: 20px; line-height: 30px;}
   .korfont{font-size: 19px;}
