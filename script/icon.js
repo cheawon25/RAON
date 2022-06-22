@@ -1,6 +1,6 @@
 $(window).scroll(function() {
     var height = $(window).scrollTop();
-    if (height > 95) {
+    if (height > 700) {
         $('#main2').addClass('main2');
     } else {
         $('#main2').removeClass('main2');
